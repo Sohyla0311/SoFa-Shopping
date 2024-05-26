@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">SoFa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">All Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <form class="form-inline ml-auto">
+        <div class="input-group search-group">
+          <input type="text" class="form-control search-bar" placeholder="Search">
+          <div class="input-group-append">
+            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+        <a href="account.html" class="nav-link"><i class="fas fa-user"></i></a>
+        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+      </form>
+
+    </div>
+  </nav>
+
+  <!-- Filter Section -->
+  <div class="container filter-section">
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Filter by Types:</p>
+        <div class="filter-option selected" data-filter="type" data-value="all">All</div>
+        <div class="filter-option" data-filter="type" data-value="male">Male</div>
+        <div class="filter-option" data-filter="type" data-value="female">Female</div>
+        <div class="filter-option" data-filter="type" data-value="child">Child</div>
+        <div class="filter-option" data-filter="type" data-value="engineer">Engineer</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Filter by Size:</p>
+        <div class="filter-option selected" data-filter="Size" data-value="all">All</div>
+        <div class="filter-option" data-filter="Size" data-value="S">S</div>
+        <div class="filter-option" data-filter="Size" data-value="M">M</div>
+        <div class="filter-option" data-filter="Size" data-value="L">L</div>
+        <div class="filter-option" data-filter="Size" data-value="XL">XL</div>
+        <div class="filter-option" data-filter="Size" data-value="XXL">XXL</div>
+        <div class="filter-option" data-filter="Size" data-value="3XL">3XL</div>
+        <div class="filter-option" data-filter="Size" data-value="4XL">4XL</div>
+        <div class="filter-option" data-filter="Size" data-value="5XL">5XL</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Filter by Category:</p>
+        <div class="filter-option selected" data-filter="Category" data-value="all">All</div>
+        <div class="filter-option" data-filter="Category" data-value="male">Men's dresses</div>
+        <div class="filter-option" data-filter="Category" data-value="female">Women's dresses</div>
+        <div class="filter-option" data-filter="Category" data-value="child">Baby's dresses</div>
+        <div class="filter-option" data-filter="Category" data-value="Accerssories">Accerssories</div>
+        <div class="filter-option" data-filter="Category" data-value="Bags">Bags</div>
+        <div class="filter-option" data-filter="Category" data-value="Shoes">Shoes</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Filter by Color:</p>
+        <div class="filter-option selected" data-filter="Color" data-value="all">All</div>
+        <div class="filter-option" data-filter="Color" data-value="Black">Black</div>
+        <div class="filter-option" data-filter="Color" data-value="White">White</div>
+        <div class="filter-option" data-filter="Color" data-value="Gray">Gray</div>
+        <div class="filter-option" data-filter="Color" data-value="brown">brown</div>
+        <div class="filter-option" data-filter="Color" data-value="Red">Red</div>
+        <div class="filter-option" data-filter="Color" data-value="Green">Green</div>
+        <div class="filter-option" data-filter="Color" data-value="Blue">Blue</div>
+        <div class="filter-option" data-filter="Color" data-value="Yellow">Yellow</div>
+        <div class="filter-option" data-filter="Color" data-value="Orange">Orange</div>
+        <div class="filter-option" data-filter="Color" data-value="Pink">Pink</div>
+        <div class="filter-option" data-filter="Color" data-value="purple">purple</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Special:</p>
+        <div class="filter-option selected" data-filter="special" data-value="all">All</div>
+        <div class="filter-option" data-filter="special" data-value="discount">Discount</div>
+        <div class="filter-option" data-filter="special" data-value="free-shipping">Free Shipping</div>
+        <div class="filter-option" data-filter="special" data-value="Arrives-within-3-days">Arrives within 3 days</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="filter-title">Filter by Price:</p>
+        <div class="price-filter">
+          <span>From</span>
+          <input type="number" class="form-control" id="priceFrom" min="0" placeholder="0">
+          <span>To</span>
+          <input type="number" class="form-control" id="priceTo" min="0" placeholder="0">
+          <button class="btn btn-secondary clear-btn" id="clearPrice">Clear</button>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    
+    <div class="search-sort d-flex justify-content-between">
+      <!-- Search by name -->
+      <form class="form-inline">
+        <div class="input-group">
+          <input type="text" class="form-control search-bar" placeholder="Search by name">
+          <div class="input-group-append">
+            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </form>
+    
+      <!-- Dropdown -->
+      <select class="form-control ml-4">
+        <option value="Sort By">Sort By</option>
+        <option value="Latest">Latest</option>
+        <option value="Popularity">Popularity</option>
+        <option value="Best Rating">Best Rating</option>
+      </select>
+    </div>
+
+</div>
+  
+<!-- Products Section -->
+  <div class="container mt-5">
+    <h2>All Products</h2>
+    <div class="row">
+
+      <!-- Loop through product cards -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/7.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Business Suit</h5>
+            <p class="card-text">$19.99<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above block for more products -->
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/6.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Stylish Shirt</h5>
+            <p class="card-text">$24.99<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/8.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Hiking Jacket</h5>
+            <p class="card-text">$9.99<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/5.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Girlfriend‘ skirt</h5>
+            <p class="card-text">$29.99<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/5.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/8.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/6.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/7.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/6.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/5.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/7.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="./pictures/8.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">$10.00<a href="cart.html" class="nav-link d-none d-lg-inline"><i class="fas fa-shopping-cart"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="text-white text-center mt-4 py-4" style="background-color: rgb(27, 59, 153); color: white;">
+  <div class="container">
+    <br>
+    <div class="row">
+      <div class="col-md-4 text-md-left mb-4">
+        <h5 class="mb-2">SoFa</h5>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 123 Main St, City, Country<br>
+          <i class="fas fa-envelope"></i> info@example.com<br>
+          <i class="fas fa-phone"></i> (123) 456-7890
+        </p>
+      </div>
+      <div class="col-md-4 mb-4 text-md-left">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="products.html" class="text-white">All Products</a></li>
+          <li><a href="cart.html" class="text-white">Shopping Cart</a></li>
+          <li><a href="account.html" class="text-white">Account</a></li>
+          <li><a href="about.html" class="text-white">About</a></li>
+          <li><a href="contact.html" class="text-white">Contact Us</a></li>  
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-left mb-4">
+        <h5 class="mb-3">Register Now!</h5>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <button type="submit" class="btn btn-light btn-block">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-bottom: 0px;">&copy; 2024 SoFA Shopping Website. All rights reserved.</p>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="./products.js"></script>
+   </body>
+</html>

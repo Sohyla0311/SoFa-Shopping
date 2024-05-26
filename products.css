@@ -1,0 +1,40 @@
+.filter-section {
+    margin-top: 10px;
+  }
+  .filter-title {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .filter-option {
+    display: inline-block;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  .filter-option.selected {
+    text-decoration: underline;
+  }
+  .price-filter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .price-filter input {
+    margin: 0 10px;
+    width: 100px;
+  }
+  .price-filter input::-webkit-outer-spin-button,
+  .price-filter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;/* Hides the arrows */
+    margin: 0; 
+  }
+  .clear-btn {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .seach&sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
